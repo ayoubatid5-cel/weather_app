@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+
+<body>
+    <main class="weather-app">
+
+        <h1>Weather App</h1>
+        <p>Welcome to the Weather App</p>
+
+        <form id="weather-form">
+            <label for="question">Entrez le nom de la ville :</label>
+
+            <input
+                type="text"
+                id="question"
+                name="question"
+                placeholder="Exemple : Rabat"
+                required
+            >
+
+            <button type="submit">Envoyer</button>
+            <button type="reset">Effacer</button>
+        </form>
+
+        <p id="message"></p>
+
+        <section id="weather-result" hidden>
+            <h2 id="city-name"></h2>
+
+            <p>Température : <span id="temperature"></span> °C</p>
+            <p>Humidité : <span id="humidity"></span> %</p>
+            <p>Vitesse du vent : <span id="wind"></span> km/h</p>
+        </section>
+
+    </main>
+</body>
+</html>
